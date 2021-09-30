@@ -1,7 +1,5 @@
 const buttons = document.querySelectorAll('button');
-const div = document.querySelector('div');
-const ul = document.createElement('ul');
-const li = document.createElement('li');
+
 
 // ul.appendChild(li);
 // div.appendChild(li);
@@ -44,6 +42,9 @@ function playRound(playerSelection, computerSelection) {
 // }
 
 const userSelection = event => {
+    const div = document.querySelector('div');
+    const ul = document.createElement('ul');
+    const li = document.createElement('li');
     const newDiv = document.createElement('div');
     const li = document.createElement('li');
     const userInput = document.createTextNode(event);
